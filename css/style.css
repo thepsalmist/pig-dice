@@ -11,7 +11,7 @@ header,
   -o-background-size: cover;
   background-size: cover;
 } */
-.header1 {
+.header1, .header2 {
   text-align: center;
   font-weight: bold;
 }
