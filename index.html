@@ -13,85 +13,91 @@
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark unique-color-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">PIG_DICE</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Contact</a>
-            </li>
-          </ul>
-          <div id="slides" class="carousel slide" data-ride="carousel">
-            <ul class="carousel-indicators">
-              <li data-target="#slides" data-slide-to"0"></li>
-              <li data-target="#slides" data-slide-to"1"></li>
-              <li data-target="#slides" data-slide-to"2"></li>
-            </ul>
-            <div class="carousel-inner">
-              <div class="carousel-irtem">
-                <img src="" alt="">
-
-              </div>
-
-            </div>
-
+  <nav class="navbar navbar-expand-md navbar-dark unique-color-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">PIG_DICE</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="slides" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+      <li data-target="#slides" data-slide-to"0"></li>
+      <li data-target="#slides" data-slide-to"1"></li>
+      <li data-target="#slides" data-slide-to"2"></li>
+    </ul>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/background1.jpg" alt="Background1">
+        <div class="carousel-caption">
+          <h1 class="display-2">Pig Dice Game</h1>
+          <button type="button" class="btn btn-outline-light btn-lg">Register</button>
+          <button type="button" class="btn btn-primary btn-lg">Rules</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/background2.jpg" alt="Background2">
+      </div>
+      <div class="carousel-item">
+        <img src="img/background3.jpg" alt="Background3">
+      </div>
+    </div>
+  </div>
+  <main>
+    <section id=rulesArea>
+      <div class="container-fluid padding">
+        <div class="row welcome text-centre">
+          <div class="col-12">
+            <h1 class="display-4"> Rules of the Game</h1>
+          </div>
+          <hr>
+          <div class="col-12">
+            <p class="lead">The rules of the game are:
+              <ul>
+                <li>Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":</li>
+                <li>If the player rolls a 1, they score nothing and it becomes the next player's turn.</li>
+                <li>If the player rolls any other number, it is added to their turn total and the player's turn continues.</li>
+                <li>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</li>
+                <li>The first player to score 100 or more points wins.</li>
+              </ul>
+            </p>
           </div>
         </div>
       </div>
-    </nav>
-    <div id="intro" class="view">
+    </section>
+    <section id=registrationArea>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-">
 
-      <div class="mask">
-
-      </div>
-
-    </div>
-  </header>
-
-  <main>
-    <div class="container">
-      <section id="rules">
-
-        <h2 class="mb-5">Rules</h2>
-        <div class="row d-flex justify-content-center mb-4">
+          </div>
 
         </div>
 
-      </section>
-      <hr class="my-5">
-      <section id="register">
-        <h2 class="mb-5"> Register To Play</h2>
-
-
-    </div>
-
-
+      </div>
 
     </section>
-    <hr class="my-5">
-    <section id="playerArea">
-
-
-
-    </section>
-    <hr class="my-5">
-    </div>
 
   </main>
+
+
 
 
   <script type="text/javascript" src="js/popper.min.js"></script>
