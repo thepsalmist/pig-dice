@@ -30,7 +30,7 @@ Player.prototype.hold = function() {
 
 
 
-
+// User Interface
 
 $(document).ready(function() {
   $("#rulesButton").click(function() {
@@ -48,4 +48,18 @@ $(document).ready(function() {
     $("#player2Name").text(player2.name);
     console.log("no-work")
   });
+  $("#rollP1").click(function(event) {
+    firstPlayer.roll();
+    $("#scoreP1").text(firstPlayer.score);
+
+  });
+  $("#rollP2").click(function(event) {
+    secondPlayer.roll();
+    $("#scoreP2").text(secondPlayer.score);
+
+  });
+
+
+
+
 });
