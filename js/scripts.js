@@ -1,3 +1,4 @@
+//Business Logic
 var player1;
 var player2;
 
@@ -7,7 +8,6 @@ function Player(name, totalPoints, diceRoll, score) {
   this.diceRoll = 0;
   this.score = 0;
 }
-
 Player.prototype.roll = function() {
   var randomNumber = Math.floor(Math.random() * 6) + 1;
   this.diceRoll = randomNumber;
@@ -24,7 +24,11 @@ Player.prototype.hold = function() {
   this.score = 0;
   alert(this.name + "Its the Next player's turn")
 };
-
+Player.prototype.winner = function() {
+  if (this.totalPoints >= 100) {
+    $("#playerTurn").text(this.name + "Congratulations, You win the game");
+  }
+}
 
 
 
