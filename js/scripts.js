@@ -27,7 +27,7 @@ Player.prototype.roll = function() {
   this.diceRoll = randomNumber;
   if (randomNumber === 1) {
     this.score = 0;
-    $("#playerTurn").text("Sorry! You lost this turn its the Next player's Turn")
+    $("#playerTurn").text(this.name + "Sorry! You rolled 1 and lost this turn it's the Next player's Turn")
 
   } else {
     this.score += randomNumber;
@@ -36,7 +36,7 @@ Player.prototype.roll = function() {
 Player.prototype.hold = function() {
   this.totalPoints += this.score;
   this.score = 0;
-  alert(this.name + "Its the Next player's turn")
+  $("#playerTurn").text(this.name + "It's the next player's turn")
 };
 Player.prototype.winner = function() {
   if (this.totalPoints >= 100) {
