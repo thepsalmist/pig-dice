@@ -38,30 +38,44 @@
     </div>
   </nav>
   <main>
-    <section class="playerArea">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-6">
-            <h3 id="playe1Name"></h3>
-            <hr>
-            <p>Total Points:<span id="p1-totalPoints"></span></p>
-            <img src="" alt="">
-            <p>Dice Roll:<span id="p1-diceRoll"></span></p>
-            <p>Score:<span id="p1Score"></span></p>
-            <p><button id="p1-roll">Roll</button> <button id="p1-hold">Hold</button></p>
+    <div class="container-fluid padding" id="registrationArea">
+      <h1 class="header2">Register to Play</h1>
+      <form class="form-group">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <input type="text" class="form-control" id="namePlayer1" placeholder="Player1">
           </div>
-          <div class="col-md-6">
-            <h3 id="playe2Name"></h3>
-            <hr>
-            <p>Total Points:<span id="p2-totalPoints"></span></p>
-            <img src="" alt="">
-            <p>Dice Roll:<span id="p2-diceRoll"></span></p>
-            <p>Score:<span id="p2Score"></span></p>
-            <p><button id="p1-roll">Roll</button> <button id="p1-hold">Hold</button></p>
+          <div class="form-group col-md-6">
+            <input type="text" class="form-control" id="namePlayer2" placeholder="Player2">
           </div>
         </div>
+        <button type="button" class="btn btn-info" id="submitForm">Play</button>
+      </form>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6" id="player1Field">
+          <br>
+          <h3 id="player1Name"></h3>
+          <hr>
+          <p>Total Points:<span id="totalPointsP1"></span></p>
+          <img src="" alt="">
+          <p>Dice Roll:<span id="diceRollP1"></span></p>
+          <p>Score:<span id="scoreP1"></span></p>
+          <p><button id="rollP1">Roll</button> <button id="p1-hold">Hold</button></p>
+        </div>
+        <div class="col-md-6" id="player2Field">
+          <br>
+          <h3 id="player2Name"></h3>
+          <hr>
+          <p>Total Points:<span id="totalPointsP2"></span></p>
+          <img src="" alt="">
+          <p>Dice Roll:<span id="diceRollP2"></span></p>
+          <p>Score:<span id="scoreP2"></span></p>
+          <p><button id="rollP2">Roll</button> <button id="p1-hold">Hold</button></p>
+        </div>
       </div>
-    </section>
+    </div>
   </main>
   <script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/popper.min.js"></script>
