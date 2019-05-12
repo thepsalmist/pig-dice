@@ -36,7 +36,7 @@ To play the game as a user click on the link
 
 
 ## Link to View Aplication
-
+https://thepsalmist.github.io/pig-dice/
 ## Support and contact details
 Contact: xf.xavierfrank4@gmail.com
 ### License
