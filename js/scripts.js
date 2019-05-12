@@ -13,12 +13,12 @@ Player.prototype.roll = function() {
   this.diceRoll = randomNumber;
   if (randomNumber === 1) {
     this.score = 0;
-    $("playerTurn").text("Sorry! You lost this turn its the Next player's Turn")
+    $("#playerTurn").text("Sorry! You lost this turn its the Next player's Turn")
 
   } else {
     this.score += randomNumber;
   }
-}
+};
 Player.prototype.hold = function() {
   this.totalPoints += this.score;
   this.score = 0;
@@ -49,15 +49,17 @@ $(document).ready(function() {
     console.log("no-work")
   });
   $("#rollP1").click(function(event) {
-    firstPlayer.roll();
-    $("#scoreP1").text(firstPlayer.score);
-
+    console.log("no-work here")
+    player1.roll();
+    $("#diceRollP1").text(player1.diceRoll);
+    $("#scoreP1").text(player1.score);
   });
   $("#rollP2").click(function(event) {
-    secondPlayer.roll();
-    $("#scoreP2").text(secondPlayer.score);
-
+    player2.roll();
+    $("#diceRollP2").text(player2.diceRoll);
+    $("#scoreP2").text(player2.score);
   });
+  $("#holdP1").click(function())
 
 
 
