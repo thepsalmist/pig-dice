@@ -8,6 +8,30 @@ function Player(name, totalPoints, diceRoll, score) {
   this.score = 0;
 }
 
+Player.prototype.roll = function() {
+  var randomNumber = Math.floor(Math.random() * 6) + 1;
+  this.diceRoll = randomNumber;
+  if (randomNumber === 1) {
+    this.score = 0;
+    $("playerTurn").text("Sorry! You lost this turn its the Next player's Turn")
+
+  } else {
+    this.score += randomNumber;
+  }
+}
+Player.prototype.hold = function() {
+  this.totalPoints += this.score;
+  this.score = 0;
+  alert(this.name + "Its the Next player's turn")
+};
+
+
+
+
+
+
+
+
 $(document).ready(function() {
   $("#rulesButton").click(function() {
     $("#rules-of-game").show();
@@ -23,7 +47,5 @@ $(document).ready(function() {
     $("#player1Name").text(player1.name);
     $("#player2Name").text(player2.name);
     console.log("no-work")
-
-
-  })
+  });
 });
