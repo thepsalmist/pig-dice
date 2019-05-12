@@ -24,4 +24,30 @@ header,
 
 #rules-of-game {
   display: none;
+  margin: 20px;
+}
+
+#player1Field, #player2Field, #turnField {
+  background-color: transparent;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+#blogBanner {
+  background: url("https://images.pexels.com/photos/278943/pexels-photo-278943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#aboutBanner {
+  background: url("https://images.pexels.com/photos/122427/roll-the-dice-craps-board-game-points-122427.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
