@@ -19,3 +19,7 @@ header,
 #gameRules {
   float: inherit;
 }
+
+#rules-of-game {
+  display: none;
+}

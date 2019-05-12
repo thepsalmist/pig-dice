@@ -48,8 +48,8 @@
         <img src="img/background1.jpg" class="img-fluid" alt="Background1">
         <div class="carousel-caption">
           <h1 class="display-2">Pig Dice Game</h1>
-          <button type="button" class="btn btn-outline-light btn-lg">Register</button>
-          <button type="button" class="btn btn-primary btn-lg">Rules</button>
+          <a href="#rules-of-game" class="btn btn-info btn-lg" role="button" id="rulesButton">Rules</a>
+          <a href="#registrationArea" class="btn btn-info btn-lg" role="button" id="registerButton">Register</a>
         </div>
       </div>
       <div class="carousel-item">
@@ -61,44 +61,40 @@
     </div>
   </div>
   <main>
-    <section id=rulesArea>
-      <div class="container-fluid padding">
-        <div class="row welcome text-centre">
-          <div class="col-12">
-            <h1 class="header1"> Rules of the Game</h1>
-            <hr>
-          </div>
+    <div class="container-fluid padding" id="rules-of-game">
+      <div class="row welcome text-centre">
+        <div class="col-12">
+          <h1 class="header1"> Rules of the Game</h1>
           <hr>
-          <div class="col-12" id="gameRules">
-            <p class="lead">The rules of the game are as follows: </p>
-            <ul>
-              <li>Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":</li>
-              <li>If the player rolls a 1, they score nothing and it becomes the next player's turn.</li>
-              <li>If the player rolls any other number, it is added to their turn total and the player's turn continues.</li>
-              <li>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</li>
-              <li>The first player to score 100 or more points wins.</li>
-            </ul>
-          </div>
+        </div>
+        <hr>
+        <div class="col-12" id="gameRules">
+          <p class="lead">The rules of the game are as follows: </p>
+          <ul>
+            <li>Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":</li>
+            <li>If the player rolls a 1, they score nothing and it becomes the next player's turn.</li>
+            <li>If the player rolls any other number, it is added to their turn total and the player's turn continues.</li>
+            <li>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</li>
+            <li>The first player to score 100 or more points wins.</li>
+          </ul>
         </div>
       </div>
-    </section>
-    <section id=registrationArea>
-      <div class="container-fluid">
-        <h1 class="header2">New Game</h1>
-        <form class="" action="index.html" method="post">
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <input type="text" class="form-control" id="namePlayer1" placeholder="Player1">
-            </div>
-            <div class="form-group col-md-6">
-              <input type="text" class="form-control" id="namePlayer2" placeholder="Player2">
-            </div>
+    </div>
+    <div class="container-fluid padding" id="registrationArea">
+      <h1 class="header2">New Game</h1>
+      <form class="" action="index.html" method="post">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <input type="text" class="form-control" id="namePlayer1" placeholder="Player1">
           </div>
-          <a href="play.html" class="btn btn-info" role="button">Play</a>
-          <button type="submit" class="btn">Play</button>
-        </form>
-      </div>
-    </section>
+          <div class="form-group col-md-6">
+            <input type="text" class="form-control" id="namePlayer2" placeholder="Player2">
+          </div>
+        </div>
+        <a href="play.html" class="btn btn-info" role="button">Play</a>
+        <button type="submit" class="btn">Play</button>
+      </form>
+    </div>
   </main>
 
 
@@ -107,6 +103,7 @@
   <script type="text/javascript" src="js/popper.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
 
 </body>
 <footer>
