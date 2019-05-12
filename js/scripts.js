@@ -49,19 +49,36 @@ $(document).ready(function() {
     console.log("no-work")
   });
   $("#rollP1").click(function(event) {
+    event.preventDefault();
     console.log("no-work here")
     player1.roll();
     $("#diceRollP1").text(player1.diceRoll);
     $("#scoreP1").text(player1.score);
   });
   $("#rollP2").click(function(event) {
+    event.preventDefault();
     player2.roll();
     $("#diceRollP2").text(player2.diceRoll);
     $("#scoreP2").text(player2.score);
   });
-  $("#holdP1").click(function())
+  $("#holdP1").click(function() {
+    event.preventDefault();
+    player1.hold();
+    $("#totalPointsP1").text(player1.totalPoints);
+    player1.diceRoll = 0;
+    player1.score = 0;
+    $("#diceRollP1").text(player1.diceRoll);
+    $("#scoreP1").text(player1.score);
 
+  });
+  $("#holdP2").click(function() {
+    event.preventDefault();
+    player2.hold();
+    $("#totalPointsP2").text(player2.totalPoints);
+    player2.diceRoll = 0;
+    player2.score = 0;
+    $("#diceRollP2").text(player2.diceRoll);
+    $("#scoreP2").text(player2.score);
 
-
-
+  });
 });
