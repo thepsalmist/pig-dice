@@ -31,8 +31,12 @@ To play the game as a user click on the link
 1. HTML
 2. CSS
 3. JavaScript
-4. jQuery 
+4. jQuery
 5. Bootstrap
+
+
+## Link to View Aplication
+
 ## Support and contact details
 Contact: xf.xavierfrank4@gmail.com
 ### License

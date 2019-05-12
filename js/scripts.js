@@ -85,7 +85,11 @@ $(document).ready(function() {
     player1.score = 0;
     $("#diceRollP1").text(player1.diceRoll);
     $("#scoreP1").text(player1.score);
-
+    if (this.totalPoints >= 100) {
+      $("#playerTurn").text(this.name + " Congratulations, You win the game");
+    } else {
+      return false;
+    }
   });
   $("#holdP2").click(function() {
     event.preventDefault();
@@ -95,7 +99,11 @@ $(document).ready(function() {
     player2.score = 0;
     $("#diceRollP2").text(player2.diceRoll);
     $("#scoreP2").text(player2.score);
-
+    if (this.totalPoints >= 100) {
+      $("#playerTurn").text(this.name + " Congratulations, You win the game");
+    } else {
+      return false;
+    }
   });
   $("#newGame").click(function() {
     location.reload();
