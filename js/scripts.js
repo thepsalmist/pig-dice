@@ -18,8 +18,6 @@ function reset() {
     player.diceRoll = 0;
     player.score = 0;
   });
-  var outputs = []
-
 
 }
 Player.prototype.roll = function() {
@@ -27,7 +25,7 @@ Player.prototype.roll = function() {
   this.diceRoll = randomNumber;
   if (randomNumber === 1) {
     this.score = 0;
-    $("#playerTurn").text(this.name + "Sorry! You rolled 1 and lost this turn it's the Next player's Turn")
+    $("#playerTurn").text("Hey " + this.name + " Sorry! You rolled 1 and lost this turn it's the next player's turn")
 
   } else {
     this.score += randomNumber;
@@ -36,11 +34,11 @@ Player.prototype.roll = function() {
 Player.prototype.hold = function() {
   this.totalPoints += this.score;
   this.score = 0;
-  $("#playerTurn").text(this.name + "It's the next player's turn")
+  $("#playerTurn").text("Thanks " + this.name + " It's the next player's turn")
 };
 Player.prototype.winner = function() {
   if (this.totalPoints >= 100) {
-    $("#playerTurn").text(this.name + "Congratulations, You win the game");
+    $("#playerTurn").text(this.name + " Congratulations, You win the game");
   }
 }
 
@@ -98,5 +96,8 @@ $(document).ready(function() {
     $("#diceRollP2").text(player2.diceRoll);
     $("#scoreP2").text(player2.score);
 
+  });
+  $("#newGame").click(function() {
+    location.reload();
   });
 });
