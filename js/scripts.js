@@ -9,17 +9,6 @@ function Player(name, totalPoints, diceRoll, score) {
   this.score = 0;
 }
 
-function reset() {
-  $("#namePlayer1").val("");
-  $("#namePlayer2").val("");
-  var players = [player1, player2];
-  players.forEach(function(player) {
-    player.totalPoints = 0;
-    player.diceRoll = 0;
-    player.score = 0;
-  });
-
-}
 Player.prototype.roll = function() {
   var randomNumber = Math.floor(Math.random() * 6) + 1;
   this.diceRoll = randomNumber;
